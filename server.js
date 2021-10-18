@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require("express-handlebars");
 const { getLatestComic, getIndividualComic } = require("./xkcd.js");
 const { getComicPages } = require("./utilities.js");
-const PORT = 8080;
+const PORT = 5000;
 const app = express();
 
 app.use("/static", express.static("public"));
