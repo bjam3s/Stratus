@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require("express-handlebars");
 const { getLatestComic, getIndividualComic } = require("./xkcd.js");
 const { getComicPages } = require("./utilities.js");
-//const PORT = 5000;
+const PORT = 3000;
 const app = express();
 
 app.use("/static", express.static("public"));
@@ -54,5 +54,5 @@ app.get("/:id", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:8080`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
