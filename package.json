@@ -13,6 +13,7 @@
     "axios": "^0.23.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.4"
+    "express-handlebars": "^5.3.4",
+    "html-escape": "^2.0.0"
   }
 }
