@@ -1,24 +1,26 @@
 {{#if comic}}
-<div class="comic-container">
-  <div class="comic-details">
-    <div class="comic-date">
-      <p>Comic published on {{comic.day}}/{{comic.month}}/{{comic.year}}</p>
+  <div class="comic-container">
+    <div class="comic-details">
+      <div class="comic-date">
+        <p>Comic published on {{comic.day}}/{{comic.month}}/{{comic.year}}</p>
+      </div>
+      <div class="comic-views">Views: {{views}}</div>
     </div>
-    <div class="comic-views">Views: {{views}}</div>
+    <div class="comic-title">{{comic.title}}</div>
+    <div class="comic-image">
+      <img src="{{comic.img}}" data-num="{{comic.num}}" alt="{{comic.alt}}" />
+    </div>
+    {{#if comic.transcript}}
+      <div class="comic-transcript">
+        {{comic.transcript}}
+      </div>
+    {{/if}}
+    <div class="comic-actions">
+      <a href="/{{previous}}" alt="Previous Comic">Previous</a>
+      <a href="/random" alt="Random Comic">Random</a>
+      <a href="/{{next}}" alt="Next Comic">Next</a>
+    </div>
   </div>
-  <div class="comic-title">{{comic.title}}</div>
-  <div class="comic-image">
-    <img src="{{comic.img}}" data-num="{{comic.num}}" alt="{{comic.alt}}"/>
-  </div>
-  <div class="comic-transcript">
-    {{ comic.transcript }}
-  </div>
-  <div class="comic-actions">
-    <a href="/{{previous}}" alt="Previous Comic">Previous</a>
-    <a href="/random" alt="Random Comic">Random</a>
-    <a href="/{{next}}" alt="Next Comic">Next</a>
-  </div>
-</div>
 {{else}}
   <div>No Comic found!</div>
 {{/if}}
