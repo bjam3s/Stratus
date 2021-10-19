@@ -1,3 +1,7 @@
+const TranscriptParser = require('transcript-parser');
+const tp = new TranscriptParser();
+
+
 const getComicPages = (comic, latestComicNum) => {
   const comicNum = parseInt(comic.num, 0);
   const next = comicNum + 1;
