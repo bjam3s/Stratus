@@ -12,7 +12,11 @@
     </div>
     {{#if comic.transcript}}
       <div class="comic-transcript">
-        {{comic.transcript}}
+        {{#each comic.transcript}}
+        <div>
+          <p>{{this}}</p>
+        </div>
+        {{/each}}
       </div>
     {{/if}}
     <div class="comic-actions">

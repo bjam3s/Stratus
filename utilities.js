@@ -19,12 +19,24 @@ const getComicPages = (comic, latestComicNum) => {
 }
 
 const parseTranscript = (comic) => {
-  return {
-    ...comic,
-    transcript: unescape(comic.transcript)
-  };
-};
+  const parsed = tp.parseOneSync(comic.transcript);
+  const itemsToFilter = ["[", "]"];
+  if (parsed && parsed.speaker) {
+    const speakers = Object
+      .values(parsed.speaker) // Grab the object property values and put in an array
+      .filter(speaker => speaker) // Filtering out speakers that are undefined
+      .flat() // flatten it to a single array
+      .filter(item => !itemsToFilter.includes(item)); // filter out all text we don't want
+    if (speakers && speakers.length > 0) {
+      return {
+        ...comic,
+        transcript: speakers
+      };
+    }
+  }
 
+  return comic;
+};
 
 module.exports = {
   getComicPages,
