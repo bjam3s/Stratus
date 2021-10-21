@@ -3,9 +3,7 @@
 ## 4th year sophomore @Seneca
 -Looking to attain an internship position
 
--Currently learning Everything 
-
--Applying for Stratus360 Intern position
+-Currently learning Javascript
 
 # **Getting Started**
 ## Installations
