@@ -7,13 +7,13 @@
 
 # **Getting Started**
 
-## Prerequesities
+### Prerequisites
 
   1. Install npm packages
     
     `npm install`
     
-## Installations
+### Installations
 
   1. Install express Packages
     
