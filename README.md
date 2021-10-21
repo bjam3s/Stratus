@@ -7,7 +7,7 @@
 
 -Applying for Stratus360 Intern position
 
-#**Getting Started**
+# **Getting Started**
 ## Installations
 ⋅⋅* npm
   1. Install npm packages
