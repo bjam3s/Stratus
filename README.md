@@ -9,7 +9,7 @@
 
 # **Getting Started**
 ## Installations
-⋅⋅* npm
+
   1. Install npm packages
     
     `npm install`
