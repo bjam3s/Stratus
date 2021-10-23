@@ -1,6 +1,6 @@
 ### Hi there I'm James Bilik
 
-## 4th year sophomore @Seneca
+## 4th semester sophomore @Seneca
 -Looking to attain an internship position
 
 -Currently learning Javascript
